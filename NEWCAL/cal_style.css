@@ -1,0 +1,36 @@
+body{
+    background-color:#0f45b9;
+    margin: 20px;
+    top: 3px;
+    font-weight: bolder;
+}
+input[type="button"]{
+    border: 3px solid darkgreen;
+    margin: 3px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    width: 60px;
+    padding: 3px;
+    height: 30px;
+    border-radius: 5px;
+    }
+#output{
+    width: 90%;
+    text-align: start;
+    color: black;
+    background-color:#fff;
+    height: 40px;
+    margin-top: 10px;
+    border: 3px solid black;
+    border-radius: 10%;
+    font-size: large;
+}
+#cal{
+    background: black;
+    width: 28%;
+    height: 100%;
+    position: relative;
+    align-content: center;
+    padding-left: 13px;
+}

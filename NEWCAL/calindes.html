@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Calculator</title>
+	<link rel="stylesheet" type="text/css" href="cal_style.css">
+	<script type="text/javascript" src="cal_script.js"></script>
+</head>
+<body>
+	<div>
+		<form id="cal">
+	<input type="text" id="output" disabled="" placeholder="0" name="">
+	<br><br>
+
+	<input type="button" value="9" onclick="cal.output.value+= '9'" name="">
+	<input type="button" value="8" onclick="cal.output.value+= '8'" name="">
+	<input type="button" value="7" onclick="cal.output.value+= '7'" name="">
+	<input type="button" value="6" onclick="cal.output.value+= '6'" name="">
+	<input type="button" value="-" onclick="cal.output.value+= '-'" name="">
+	<br><br>
+	<input type="button" value="5" onclick="cal.output.value+= '5'" name="">
+	<input type="button" value="4" onclick="cal.output.value+= '4'" name="">
+	<input type="button" value="3" onclick="cal.output.value+= '3'" name="">
+	<input type="button" value="2" onclick="cal.output.value+= '2'" name="">
+	<input type="button" value="+" onclick="cal.output.value+= '+'" name="">
+	<br><br>
+	<input type="button" value="1" onclick="cal.output.value+= '1'" name="">
+	<input type="button" value="0" onclick="cal.output.value+= '0'" name="">
+	<input type="button" value="." onclick="cal.output.value+= '.'" name="">
+	<input type="button" value="Module" onclick="cal.output.value+= '%'" name="">
+	<input type="button" value="!" onclick="cal.output.value = factorial()" name="">
+	<br><br> 
+	<input type="button" value="Back" onclick="backspace()" name="">
+	<input type="button" value="*" onclick="cal.output.value+= '*'" name="">
+	<input type="button" value="=" onclick="cal.output.value = eval(cal.output.value)" name="">
+	<input type="button" value="Delete" onclick="cal.output.value= ' '"  name="">
+	<input type="button" value="Num Test" onclick="cal.output.value = testNum()"   style="height: 50px; width:100px; ">
+
+
+	<br><br>
+<script>
+	function factorial() 
+{ 
+	var x = document.getElementById("output").value;//e.g 10
+	var fac = 1;
+
+	if (x<1) {
+		return "Undefined";
+	}
+
+	for (i=x; i>=1; i--) {
+		fac = fac * i;
+	}
+	return fac;
+        
+}
+
+function testNum(){
+var t=document.getElementById("output").value;
+var result;
+
+if((t%2) == 0 ){
+	result = t + " is an even number";
+	return result;	
+}
+else if((t%2) == 1){
+result = t + " is an odd number";
+	return result;	}
+else
+return  ("Number undefined");
+}
+</script>
+
+
+
+
+
+
+	</form>
+</div>
+
+</body>
+</html>

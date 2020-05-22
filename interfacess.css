@@ -1,0 +1,46 @@
+body{
+  margin:0px;
+  padding: 0px;  
+}
+.main{
+    background-color:mediumslateblue;
+    position: absolute;
+    float: right;
+    }
+.num{
+    width: 75px;
+    height:50px;
+    font-size: 25px;
+    margin:2pxx;
+    cursor: pointer;
+    border-color:blueviolet;
+    border-width: 4px;
+    margin-left: 10px;
+}
+
+.symbol{
+     width: 75px;
+    height:50px;
+    font-size: 25px;
+    margin:2px;
+    cursor: pointer;
+    border-color:blueviolet;
+    border-width: 4px;
+    margin-left: 10px;
+}
+
+    .symbol:hover{
+        color:red;
+    }
+    .num:hover{
+        color:blue;
+    }
+.entervalue{
+    width: 350px;
+    height:50px;
+    margin-top:5px;
+    border-color: black;
+    border-width:4px;
+    color: black;
+    text-align: right;
+}
